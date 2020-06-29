@@ -21,8 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun shakeBall() {
         val ballImageView: ImageView = findViewById(R.id.imageView)
-        val randomChoice = Random().nextInt(20) + 1
-        val imageResource = "R.drawable.magic_8_ball_$randomChoice"
+        val randomChoice = Random().nextInt(20)
+        val imageResource = (R.drawable.magic_8_ball_1 ) + randomChoice
+        // (imageResource)
 
     ballImageView.setImageResource(imageResource)
     }
